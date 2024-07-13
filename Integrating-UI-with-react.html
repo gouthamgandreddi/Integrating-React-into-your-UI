@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    p{
+      padding-top: 1rem;
+      background-color: bisque;
+    }
+  </style>
+  <body>
+    <h1>
+      We are implementing the 
+    </h1>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+
+      function App(){
+        return (
+          <>
+            <h2> Created React Root with createRoot(getElementById()) & rendered the root </h2>
+            <Paragraph />
+          </>
+        );
+      }
+
+
+      function Paragraph(){
+        return (
+          <>
+          <p> the react component App will now be loaded and managed by the React </p>
+          </>
+        );
+      }
+    </script>
+  </body>
+</html>
