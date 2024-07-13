@@ -1,1 +1,1 @@
-This will contain my practice React Playground files
+This will contain my practice React Playground files.
